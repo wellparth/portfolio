@@ -74,7 +74,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             {post.content.map((paragraph, idx) => {
               if (paragraph.startsWith('### ')) {
                 return (
-                  <h3 key={idx} className="text-xl font-serif font-bold text-ink-900 pt-4 pb-1 border-b border-beige-200">
+                  <h3 key={idx} className="text-xl font-serif font-bold text-ink-900 pt-3 pb-1 border-b border-beige-200">
                     {paragraph.replace('### ', '')}
                   </h3>
                 );
