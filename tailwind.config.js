@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,28 +8,35 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          50: '#eef2ff',
-          100: '#e0e7ff',
-          400: '#818cf8',
-          500: '#6366f1',
-          600: '#4f46e5',
-          700: '#4338ca',
-          900: '#312e81',
+        beige: {
+          50: '#fdfbf7',
+          100: '#f7f3eb',
+          200: '#efe8da',
+          300: '#e3d7c1',
+          400: '#d5c4a5',
+          900: '#3e3729',
         },
-        accent: {
-          cyan: '#06b6d4',
-          emerald: '#10b981',
-          amber: '#f59e0b',
-          rose: '#f43f5e',
+        olive: {
+          50: '#f4f6f0',
+          100: '#e5ebd9',
+          200: '#cbd7b4',
+          300: '#aabf8a',
+          400: '#8ca465',
+          500: '#6b7a40', /* Primary Pastel Olive */
+          600: '#556331',
+          700: '#434e27',
+          800: '#363f22',
+          900: '#2d341e',
+        },
+        ink: {
+          900: '#1c221e',
+          700: '#38423c',
+          500: '#5e6a62',
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'serif', 'sans-serif'],
       },
-      animation: {
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-      }
     },
   },
   plugins: [],
