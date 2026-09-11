@@ -10,9 +10,9 @@ export const resumeData = {
     summary: "Operations and Project Coordination professional with experience in client communication, requirement gathering, stakeholder management, and digital project delivery. Background in technology and business development, with hands-on experience coordinating clients, teams, and freelance professionals from requirements through completion.",
   },
   metrics: [
-    { value: "17+", label: "Web Projects Coordinated", detail: "End-to-end management from intake to deployment", color: "from-indigo-500 to-indigo-600" },
-    { value: "15+", label: "Freelancers Managed", detail: "Built and coordinated cross-functional talent network", color: "from-cyan-500 to-cyan-600" },
-    { value: "12+", label: "Business Clients", detail: "Scoping, quotations & client relationship management", color: "from-emerald-500 to-emerald-600" },
+    { value: "17+", label: "Web Projects Coordinated", detail: "Delivered over time from requirements through launch", color: "from-indigo-500 to-indigo-600" },
+    { value: "15+", label: "Freelancer Network Built", detail: "Cross-functional talent network managed across projects", color: "from-cyan-500 to-cyan-600" },
+    { value: "12+", label: "Business Clients Served", detail: "Scoping, quotations & client relationship management", color: "from-emerald-500 to-emerald-600" },
     { value: "B.E. IT", label: "Tech Engineering Degree", detail: "MET's Institute of Engineering (SPPU, 2020-2024)", color: "from-amber-500 to-amber-600" },
   ],
   workflowSteps: [
@@ -43,11 +43,11 @@ export const resumeData = {
   ],
   caseStudies: [
     {
-      title: "17+ Concurrent Website Projects",
+      title: "17+ Website Projects Delivered",
       company: "Think Digital",
       period: "Jan 2026 – Present",
       role: "Project Coordinator",
-      desc: "Coordinated multi-client web deployments by managing timeline dependencies, resolving technical blockers, and conducting client feedback loops.",
+      desc: "Coordinated website projects from requirements through development, deployment, and post-launch support by managing timelines, resolving technical blockers, and conducting feedback loops.",
       highlights: ["Zero missed launch deadlines", "Structured client communication", "Task priority alignment"],
       badgeColor: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
     },
@@ -56,7 +56,7 @@ export const resumeData = {
       company: "Freelance Project Coordination",
       period: "Sep 2025 – Present",
       role: "Project Coordinator",
-      desc: "Built a network of 15+ vetted freelancers for 12 business owners. Handled quotations, task allocation, and weekly progress sync meetings.",
+      desc: "Built a network of 15+ vetted freelancers over time for 12 business owners. Handled quotations, task allocation, and project sync meetings.",
       highlights: ["Matched client-freelancer skills", "Weekly progress syncs", "Quotation & revision management"],
       badgeColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20"
     },
@@ -95,7 +95,7 @@ export const resumeData = {
       location: "Nashik, MH, India",
       bullets: [
         "Coordinated 17+ website projects from requirements through development, deployment and post-launch support by managing client communication, task priorities, timelines and delivery follow-ups.",
-        "Managed client requirements and feedback across multiple concurrent projects by conducting discussions, clarifying changes and translating business needs into actionable tasks.",
+        "Managed client requirements and feedback across projects by conducting discussions, clarifying changes and translating business needs into actionable tasks.",
         "Supported timely delivery of website and digital projects by tracking tasks, identifying blockers and coordinating with team members to resolve issues.",
         "Coordinated project and development meetings to align clients and team members on requirements, priorities, deliverables and next steps.",
         "Managed changing requirements throughout project lifecycles by communicating updates and coordinating revised deliverables with stakeholders.",
@@ -109,7 +109,7 @@ export const resumeData = {
       location: "Nashik, MH, India",
       bullets: [
         "Coordinated projects for 12 business owners by gathering requirements, closing project engagements, preparing quotations and connecting clients with suitable freelance professionals.",
-        "Built and coordinated a network of 15+ freelancers, matching project requirements with relevant skills and managing communication throughout project delivery.",
+        "Built and coordinated a network of 15+ freelancers over time, matching project requirements with relevant skills and managing communication throughout project delivery.",
         "Monitored client and freelancer relationships through weekly project meetings and individual follow-ups, tracking progress, clarifying requirements and resolving delivery issues.",
         "Managed project delivery from initial requirements through completion by tracking timelines, following up on pending tasks and coordinating revisions between clients and freelancers.",
         "Handled project changes and client feedback by communicating updated requirements to freelancers and aligning expectations, timelines and deliverables across stakeholders."

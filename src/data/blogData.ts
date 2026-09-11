@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     content: [
       'AI in operations is often presented as a simple productivity hack: writing an email faster, summarizing a meeting, or asking a chatbot to create a checklist. While those applications are useful, they barely scratch the surface of what artificial intelligence can achieve inside a real digital project delivery workflow. For operational teams, the true value emerges when AI acts as a structured communication layer between business clients, software engineers, UI/UX designers, and external freelancers. The goal is not to hand over decision-making to an autonomous bot, but to eliminate repetitive context switching while keeping strategic authority in human hands.',
 
-      'In my daily routine coordinating 17+ active website projects, client communications, development tasks, design revisions, and deployment schedules arrive constantly from different channels. The primary challenge is rarely a lack of information; rather, it is that information arrives in fragmented formats at unpredictable times. A client might explain a key requirement over a video call, a developer might raise a backend limitation in Slack, and a designer might drop revised Figma screens later that afternoon. The project coordinator must synthesize all these inputs into structured, actionable items. By combining tools like Claude, ChatGPT, Gemini, Notion, Jira, and GitHub with custom prompt pipelines, we transform chaotic inputs into reliable execution plans.',
+      'In my experience coordinating 17+ website projects over time, client communications, development tasks, design revisions, and deployment schedules arrive constantly from different channels. The primary challenge is rarely a lack of information; rather, it is that information arrives in fragmented formats at unpredictable times. A client might explain a key requirement over a video call, a developer might raise a backend limitation in Slack, and a designer might drop revised Figma screens later that afternoon. The project coordinator must synthesize all these inputs into structured, actionable items. By combining tools like Claude, ChatGPT, Gemini, Notion, Jira, and GitHub with custom prompt pipelines, we transform chaotic inputs into reliable execution plans.',
 
       '### 1. Turning Unstructured Conversations into Technical Tickets',
 
@@ -50,7 +50,7 @@ export const blogPosts: BlogPost[] = [
 
       '### 5. Freelancer Onboarding with Automated SOPs',
 
-      'Coordinating a network of over 15 freelance developers and designers introduces significant onboarding friction. Every freelancer requires clarity on repository structures, branch naming conventions, staging environments, Figma assets, and communication channels before they can write a single line of code.',
+      'Coordinating a talent network of over 15 freelance developers and designers across project engagements introduces significant onboarding friction. Every freelancer requires clarity on repository structures, branch naming conventions, staging environments, Figma assets, and communication channels before they can write a single line of code.',
 
       'I developed automated SOP generation prompts that transform project context files into comprehensive freelancer onboarding guides in under two minutes. Developers receive clear instructions on pull request formats, testing requirements, and deployment protocols. This eliminates back-and-forth Q&A calls and enables freelancers to contribute on day one.',
 
@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
 
       '### 7. Automated Blocker Triage and Executive Status Reporting',
 
-      'Managing 17+ website projects concurrently requires instant risk visibility. Daily project updates are ingested by triage prompts that categorize blockers by severity: critical path blockers, milestone risks, client-side content delays, and third-party API dependencies. Coordinators can immediately address high-priority bottlenecks before delivery schedules slip.',
+      'Managing digital projects across lifecycles requires instant risk visibility. Daily project updates are ingested by triage prompts that categorize blockers by severity: critical path blockers, milestone risks, client-side content delays, and third-party API dependencies. Coordinators can immediately address high-priority bottlenecks before delivery schedules slip.',
 
       'At the end of each week, these daily activity logs are compiled into concise executive status reports. Management receives a clear overview of overall project health, key accomplishments, upcoming milestones, and flagged risks without wading through hundreds of individual ticket updates.',
 
@@ -84,7 +84,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'A detailed look at how AI assisted workflows, structured prompts, project management tools, and automated reporting can reduce repetitive coordination work across multiple website projects.',
     content: [
-      'Managing multiple web development projects simultaneously creates an exponential coordination challenge: administrative overhead grows far faster than the project count itself. When one client awaits a design review, another delays content assets, a third reports a staging bug, and a fourth requests milestone updates, project coordinators spend more time managing information than driving execution.',
+      'Managing multiple web development projects across project lifecycles creates an exponential coordination challenge: administrative overhead grows far faster than the project count itself. When one client awaits a design review, another delays content assets, a third reports a staging bug, and a fourth requests milestone updates, project coordinators spend more time managing information than driving execution.',
 
       'With a background in Information Technology engineering, I set out to solve this coordination bottleneck by treating project operations as an engineering problem. The solution was constructing an AI-assisted operational workflow that streamlines project intake, scope decomposition, quotation generation, and milestone tracking across every stage of the project lifecycle.',
 
