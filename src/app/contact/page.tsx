@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import ContactFooter from '@/components/ContactFooter';
 import { resumeData } from '@/data/resumeData';
-import { Mail, Phone, Linkedin, Download, ArrowLeft, MapPin, Copy, ExternalLink } from 'lucide-react';
+import { Mail, Phone, Linkedin, ArrowLeft, MapPin, ExternalLink, Instagram, Twitter } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -30,15 +30,15 @@ export default function ContactPage() {
 
         {/* Page Header */}
         <div className="space-y-2 border-b border-beige-300 pb-6">
-          <h1 className="text-3xl font-extrabold text-ink-900 tracking-tight">
-            Contact & Connect
+          <h1 className="text-3xl font-serif font-bold text-ink-900 tracking-tight">
+            Contact & Socials
           </h1>
-          <p className="text-sm text-ink-700 max-w-xl">
-            Open for Project Coordinator, Operations Specialist, and Client Onboarding opportunities. Feel free to reach out via email, phone, or LinkedIn!
+          <p className="text-sm font-sans text-ink-700 max-w-xl leading-relaxed">
+            Open for Project Coordinator, Operations Specialist, and Client Onboarding opportunities. Connect with me across my channels!
           </p>
         </div>
 
-        {/* Contact Cards Grid */}
+        {/* Contact & Social Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Email Card */}
           <div className="beige-card space-y-4">
@@ -101,8 +101,8 @@ export default function ContactPage() {
                 <Linkedin className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-sm font-bold text-ink-900">LinkedIn Profile</h3>
-                <p className="text-xs text-ink-500">Professional network & recommendations</p>
+                <h3 className="text-sm font-bold text-ink-900">LinkedIn</h3>
+                <p className="text-xs text-ink-500">Professional network</p>
               </div>
             </div>
             <div className="pt-2 border-t border-beige-200 flex items-center justify-between">
@@ -119,33 +119,59 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* PDF Resume Card */}
+          {/* X.com (Twitter) Card */}
           <div className="beige-card space-y-4">
             <div className="flex items-center space-x-3">
               <div className="p-2.5 rounded-xl bg-olive-100 text-olive-700">
-                <Download className="w-5 h-5" />
+                <Twitter className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-sm font-bold text-ink-900">Official Resume</h3>
-                <p className="text-xs text-ink-500">Download formatted PDF document</p>
+                <h3 className="text-sm font-bold text-ink-900">X.com</h3>
+                <p className="text-xs text-ink-500">Updates & thoughts</p>
               </div>
             </div>
             <div className="pt-2 border-t border-beige-200 flex items-center justify-between">
-              <span className="text-xs text-ink-600 font-medium">Parth_Gorde_Operations_Resume.pdf</span>
+              <span className="text-xs font-mono text-ink-700">@wellparth</span>
               <a
-                href="/Parth_Gorde_Operations_Resume.pdf"
-                download
-                className="px-3 py-1.5 rounded-lg bg-olive-500 hover:bg-olive-600 text-white text-xs font-medium inline-flex items-center space-x-1 transition-colors"
+                href="https://x.com/wellparth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 rounded-lg bg-beige-200 hover:bg-beige-300 text-ink-900 border border-beige-300 text-xs font-medium inline-flex items-center space-x-1 transition-colors"
               >
-                <Download className="w-3.5 h-3.5" />
-                <span>Download PDF</span>
+                <span>Follow</span>
+                <ExternalLink className="w-3 h-3 text-olive-600" />
+              </a>
+            </div>
+          </div>
+
+          {/* Instagram Card */}
+          <div className="beige-card space-y-4 md:col-span-2">
+            <div className="flex items-center space-x-3">
+              <div className="p-2.5 rounded-xl bg-olive-100 text-olive-700">
+                <Instagram className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="text-sm font-bold text-ink-900">Instagram</h3>
+                <p className="text-xs text-ink-500">Personal & work highlights</p>
+              </div>
+            </div>
+            <div className="pt-2 border-t border-beige-200 flex items-center justify-between">
+              <span className="text-xs font-mono text-ink-700">@wellparth</span>
+              <a
+                href="https://instagram.com/wellparth"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 rounded-lg bg-beige-200 hover:bg-beige-300 text-ink-900 border border-beige-300 text-xs font-medium inline-flex items-center space-x-1 transition-colors"
+              >
+                <span>Visit Instagram</span>
+                <ExternalLink className="w-3 h-3 text-olive-600" />
               </a>
             </div>
           </div>
         </div>
 
         {/* Location Note */}
-        <div className="bg-olive-50 border border-olive-200 rounded-xl p-5 flex items-center justify-between text-xs text-ink-700">
+        <div className="bg-olive-50 border border-olive-200 rounded-xl p-5 flex items-center justify-between text-xs text-ink-700 font-sans">
           <div className="flex items-center space-x-2">
             <MapPin className="w-4 h-4 text-olive-600 shrink-0" />
             <span>Based in <strong>Nashik / Pune, Maharashtra, India</strong> (Open to Remote & On-site Roles)</span>
