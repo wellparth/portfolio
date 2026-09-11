@@ -22,7 +22,7 @@ module.exports = {
           200: '#cbd7b4',
           300: '#aabf8a',
           400: '#8ca465',
-          500: '#6b7a40', /* Primary Pastel Olive */
+          500: '#6b7a40',
           600: '#556331',
           700: '#434e27',
           800: '#363f22',
@@ -35,7 +35,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'serif', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
       },
     },
   },
