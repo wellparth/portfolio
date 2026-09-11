@@ -7,7 +7,7 @@ export const resumeData = {
     linkedin: "https://www.linkedin.com/in/parthgorde",
     location: "Nashik / Pune, MH, India",
     status: "Available for Operations & Project Coordinator Roles",
-    summary: "Operations and Project Coordination professional with a degree in Information Technology. Proven track record coordinating clients, engineering teams, and freelance talent through AI-assisted workflows to deliver web projects on time and within scope.",
+    summary: "Operations and Project Coordination professional with experience in client communication, requirement gathering, stakeholder management, and digital project delivery. Background in technology and business development, with hands-on experience coordinating clients, teams, and freelance professionals from requirements through completion.",
   },
   metrics: [
     { value: "17+", label: "Web Projects Coordinated", detail: "End-to-end management from intake to deployment", color: "from-indigo-500 to-indigo-600" },
@@ -94,10 +94,12 @@ export const resumeData = {
       period: "January 2026 – Present",
       location: "Nashik, MH, India",
       bullets: [
-        "Coordinated 17+ website projects from requirements through development, deployment and post-launch support.",
-        "Managed client requirements and feedback across multiple concurrent projects by clarifying changes and translating business needs into actionable tasks.",
-        "Supported timely delivery by tracking tasks, identifying blockers, and coordinating with team members to resolve issues.",
-        "Maintained project continuity through regular follow-ups with clients and team members."
+        "Coordinated 17+ website projects from requirements through development, deployment and post-launch support by managing client communication, task priorities, timelines and delivery follow-ups.",
+        "Managed client requirements and feedback across multiple concurrent projects by conducting discussions, clarifying changes and translating business needs into actionable tasks.",
+        "Supported timely delivery of website and digital projects by tracking tasks, identifying blockers and coordinating with team members to resolve issues.",
+        "Coordinated project and development meetings to align clients and team members on requirements, priorities, deliverables and next steps.",
+        "Managed changing requirements throughout project lifecycles by communicating updates and coordinating revised deliverables with stakeholders.",
+        "Maintained project continuity through regular follow-ups with clients and team members, ensuring pending tasks, feedback and delivery dependencies were addressed."
       ]
     },
     {
@@ -106,10 +108,11 @@ export const resumeData = {
       period: "September 2025 – Present",
       location: "Nashik, MH, India",
       bullets: [
-        "Coordinated projects for 12 business owners by gathering requirements, closing engagements, and preparing quotations.",
-        "Built and coordinated a network of 15+ freelancers, matching project requirements with relevant skills.",
-        "Monitored client and freelancer relationships through weekly project meetings and tracking progress.",
-        "Managed project delivery from initial requirements through completion, following up on pending tasks."
+        "Coordinated projects for 12 business owners by gathering requirements, closing project engagements, preparing quotations and connecting clients with suitable freelance professionals.",
+        "Built and coordinated a network of 15+ freelancers, matching project requirements with relevant skills and managing communication throughout project delivery.",
+        "Monitored client and freelancer relationships through weekly project meetings and individual follow-ups, tracking progress, clarifying requirements and resolving delivery issues.",
+        "Managed project delivery from initial requirements through completion by tracking timelines, following up on pending tasks and coordinating revisions between clients and freelancers.",
+        "Handled project changes and client feedback by communicating updated requirements to freelancers and aligning expectations, timelines and deliverables across stakeholders."
       ]
     },
     {
@@ -119,13 +122,16 @@ export const resumeData = {
       location: "Pune, MH, India",
       bullets: [
         "Communicated with prospective clients to understand their requirements and identify suitable solutions.",
-        "Managed follow-ups and coordinated information between clients and internal teams to ensure accuracy."
+        "Managed follow-ups and maintained regular communication with prospects throughout the business development process.",
+        "Coordinated information between clients and internal teams to ensure requirements were communicated accurately.",
+        "Maintained records of client interactions, follow-ups and ongoing opportunities.",
+        "Supported day-to-day business development activities and contributed to client relationship management."
       ]
     }
   ],
   education: {
     institution: "MET's Institute of Engineering (SPPU)",
-    degree: "Bachelor of Engineering in Information Technology",
+    degree: "Information Technology",
     period: "2020 – 2024",
     location: "Nashik, MH, India"
   },
