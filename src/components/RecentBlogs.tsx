@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { blogPosts } from '@/data/blogData';
 import { ArrowUpRight, Calendar, Clock } from 'lucide-react';
 
@@ -21,36 +22,45 @@ export default function RecentBlogs() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Row List Layout */}
+      <div className="space-y-4">
         {blogPosts.map((post) => (
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="beige-card flex flex-col justify-between group cursor-pointer"
+            className="beige-card flex flex-col sm:flex-row items-start sm:items-center gap-5 group cursor-pointer"
           >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between text-xs text-ink-500">
+            {/* Image Thumbnail */}
+            <div className="relative w-full sm:w-44 h-32 rounded-lg overflow-hidden shrink-0 bg-beige-200 border border-beige-300">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 space-y-2">
+              <div className="flex items-center space-x-3 text-xs text-ink-500">
                 <span className="px-2.5 py-0.5 rounded bg-olive-100 text-olive-700 font-semibold border border-olive-200">
                   {post.category}
                 </span>
-                <div className="flex items-center space-x-3 text-[11px]">
-                  <span className="flex items-center"><Calendar className="w-3 h-3 mr-1 text-olive-500" />{post.date}</span>
-                  <span className="flex items-center"><Clock className="w-3 h-3 mr-1 text-olive-500" />{post.readTime}</span>
-                </div>
+                <span className="flex items-center"><Calendar className="w-3 h-3 mr-1 text-olive-500" />{post.date}</span>
+                <span className="flex items-center"><Clock className="w-3 h-3 mr-1 text-olive-500" />{post.readTime}</span>
               </div>
 
               <h3 className="text-lg font-serif font-bold text-ink-900 group-hover:text-olive-600 transition-colors leading-snug">
                 {post.title}
               </h3>
 
-              <p className="text-xs font-sans text-ink-700 leading-relaxed line-clamp-3">
+              <p className="text-xs font-sans text-ink-700 leading-relaxed line-clamp-2">
                 {post.excerpt}
               </p>
             </div>
 
-            <div className="pt-4 mt-2 border-t border-beige-200 flex items-center text-xs font-semibold text-olive-600 group-hover:text-olive-700">
-              <span>Read Full Article</span>
-              <ArrowUpRight className="w-3.5 h-3.5 ml-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <div className="hidden lg:flex items-center text-xs font-semibold text-olive-600 shrink-0">
+              <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </div>
           </Link>
         ))}

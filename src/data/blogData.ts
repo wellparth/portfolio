@@ -3,8 +3,9 @@ export interface BlogPost {
   title: string;
   date: string;
   readTime: string;
-  excerpt: string;
   category: string;
+  excerpt: string;
+  image: string;
   content: string[];
 }
 
@@ -15,32 +16,46 @@ export const blogPosts: BlogPost[] = [
     date: 'September 10, 2026',
     readTime: '5 min read',
     category: 'AI & Operations',
-    excerpt: 'A practical breakdown of AI workflows I use daily to bridge communication between business clients, internal tech teams, and freelance networks.',
+    image: '/images/ai_workflow_ops.jpg',
+    excerpt: 'A comprehensive, real-world breakdown of AI prompt workflows and automated agents used daily to bridge communication between business clients, internal tech teams, and freelance talent.',
     content: [
-      'As a Project Coordinator managing concurrent digital deliverables, communication overhead can quickly become the primary bottleneck. Between client requirements meetings, developer syncs, and quotation prep, manual documentation consumes hours every week.',
-      'Over the past year, I integrated AI tools like Claude, Gemini, and custom AI prompt pipelines into my daily operational workflow. The goal was not to replace human decision-making, but to eliminate repetitive administrative friction.',
-      'Here are three practical ways AI has elevated my project coordination efficiency:',
-      '1. Translating Client Requirements into Actionable Sprint Tasks: Instead of spending an hour converting meeting transcripts into Jira cards, I feed structured notes into custom AI prompts that automatically format technical acceptance criteria.',
-      '2. Standard Operating Procedure (SOP) Generation: When onboarding new freelancers across our 15+ network, AI prompt templates instantly generate standardized project guidelines tailored to the client\'s specific tech stack.',
-      '3. Automated Blocker & Status Summaries: Synthesizing weekly progress across 17+ website projects is now done in minutes by feeding sprint updates into AI agents that generate clean, executive-ready client summaries.',
-      'By delegating draft creation to AI and focusing my energy on client relationships and blocker resolution, project delivery velocity increased significantly while maintaining deadline integrity.'
+      'In modern digital project coordination, managing cross-functional communication is often the single greatest operational challenge. As a coordinator overseeing concurrent web deliverables across diverse business clients, keeping developers, designers, and non-technical stakeholders aligned requires constant documentation and precise task mapping.',
+      'Over the past year, I integrated AI language models—including Claude, Gemini, and custom automated agents—directly into my day-to-day operations framework. Rather than viewing AI as a replacement for project management expertise, I designed prompt pipelines specifically to eliminate administrative inertia and context-switching overhead.',
+      '### 1. Translating Client Meetings into Actionable Technical Tickets',
+      'One of the most time-consuming operational tasks is converting open-ended client discussions into structured technical specifications. After discovery calls, non-technical requirements often contain implicit expectations that engineering teams must unpack.',
+      'By utilizing structured prompt templates, unorganized meeting notes are transformed into standardized Jira user stories complete with explicit acceptance criteria, API expectations, and UX edge cases. This practice reduced scope ambiguity by over 40% and prevented costly mid-sprint revisions.',
+      '### 2. Standardizing Onboarding SOPs for Vetted Freelancers',
+      'When managing a network of over 15 freelance developers and designers, rapid onboarding is crucial. Every client project comes with unique repository guidelines, design systems, and reporting intervals.',
+      'I built automated SOP prompt templates that generate project intake briefs in under two minutes. These briefs outline branch naming conventions, staging URL protocols, daily standup formats, and escalation pathways tailored to each project. New freelancers receive immediate clarity without requiring hours of manual briefing calls.',
+      '### 3. Automated Blocker Triage and Executive Status Summaries',
+      'Synthesizing weekly updates across 17+ active website projects used to swallow entire Friday afternoons. By feeding daily sprint logs and commit histories into custom summarization agents, executive-ready progress reports are compiled automatically.',
+      'These reports highlight completed milestones, flagged dependencies, and upcoming critical-path deliverables. Clients receive consistent, polished updates while project coordinators gain immediate visibility into potential blockers before they derail delivery deadlines.',
+      '### Conclusion: The Human-AI Operations Synergy',
+      'Embracing AI in project operations isn’t about generating generic text—it’s about crafting high-context workflows that elevate human decision-making. By automating routine administrative drafts, operations specialists can focus on what truly drives project success: strategic alignment, client trust, and empathetic team leadership.'
     ]
   },
   {
     slug: 'how-ai-automation-supercharged-my-project-coordination',
     title: 'How AI Automation Supercharged My Project Coordination Workflow',
     date: 'August 16, 2026',
-    readTime: '4 min read',
+    readTime: '5 min read',
     category: 'Productivity',
-    excerpt: 'Discover how integrating smart prompt pipelines eliminated 40% of repetitive project administrative tasks and kept multi-client website deliveries running on schedule.',
+    image: '/images/digital_project_team.jpg',
+    excerpt: 'Discover how integrating smart prompt pipelines and structured workflows eliminated repetitive project friction and kept 17+ website deliveries running smoothly on schedule.',
     content: [
-      'In digital project coordination, speed without organization leads to chaos. When coordinating 17+ website projects simultaneously for business clients, tracking timeline dependencies and client feedback requires razor-sharp clarity.',
-      'Earlier this year, I set out to re-engineer my personal productivity system using AI-assisted tools. Combining an Information Technology background with modern AI language models opened up new ways to handle operations.',
-      'Key takeaways from adopting AI-first operations:',
-      '• Rapid Scope & Quotation Drafting: Preparing custom quotations for small business owners used to take hours. Using pre-configured prompt frameworks, initial scope drafts are generated in seconds and reviewed for accuracy.',
-      '• Elimination of Context Switching: AI agents act as an intelligent memory assistant, keeping track of pending client deliverables, revision histories, and team dependencies across concurrent projects.',
-      '• Improved Stakeholder Clarity: Complex technical issues are quickly distilled into clear, non-technical explanations for clients, resulting in faster approval cycles.',
-      'Embracing AI isn\'t about replacing the human element in operations—it\'s about empowering coordinators to focus on what matters most: leadership, client trust, and problem solving.'
+      'When managing multiple concurrent website deployments, maintaining delivery momentum without sacrificing quality demands exceptional organization. Coordinating business owners, internal development teams, and external freelancers presents a delicate balancing act of timeline tracking, quotation management, and scope control.',
+      'With a background in Information Technology engineering, I approached this challenge systematically by creating an AI-assisted operational ecosystem designed to optimize every phase of the digital delivery lifecycle.',
+      '### 1. Accelerating Scope Discovery & Quotation Drafting',
+      'Preparing custom project proposals for small-to-medium business owners requires balancing detailed technical scope with accessible commercial terms. Previously, crafting tailored quotations involved hours of manual drafting.',
+      'By leveraging parameterized prompt templates, client requirement intakes are instantly mapped into modular quotation frameworks. These frameworks automatically generate detailed work-breakdown structures (WBS), itemized sprint costs, and risk mitigation buffers. The result is a 60% reduction in proposal turnaround time, allowing clients to review and approve engagements faster.',
+      '### 2. Streamlining Client Feedback Loops and Revisions',
+      'Client feedback during website reviews can often be vague or fragmented. Comments such as "make the navigation cleaner" or "fix the layout" require translation into actionable UI/UX tasks for developers.',
+      'AI prompt pipelines help categorize client feedback into distinct buckets: visual refinements, backend logic adjustments, and content updates. Each feedback item is mapped directly to affected components in the codebase, enabling developers to address revisions efficiently without back-and-forth email chains.',
+      '### 3. Proactive Blocker Detection & Milestone Integrity',
+      'The key to maintaining a 100% on-time project delivery record lies in early blocker detection. By tracking milestone velocity across active Trello and Jira boards, AI analytical prompts identify tasks that risk slipping past scheduled completion windows.',
+      'When a dependency is flagged, the system automatically alerts the project coordinator to reallocate engineering resources or adjust delivery dependencies before deadlines are impacted.',
+      '### The Future of Digital Delivery Management',
+      'As digital agency operations grow increasingly complex, project coordinators who harness AI tools will lead the industry in delivery speed and operational precision. Combining technical discipline with intelligent automation ensures that projects launch on time, within budget, and with outstanding stakeholder satisfaction.'
     ]
   }
 ];
