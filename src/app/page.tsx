@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import Metrics from '@/components/Metrics';
+// import Metrics from '@/components/Metrics';
 import RecentBlogs from '@/components/RecentBlogs';
 import Experience from '@/components/Experience';
 import ContactFooter from '@/components/ContactFooter';
@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <main className="space-y-6 pb-12">
         <Hero />
-        <Metrics />
+        {/* <Metrics /> */}
         <RecentBlogs />
         <Experience />
         <ContactFooter />
