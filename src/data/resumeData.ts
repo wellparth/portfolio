@@ -5,7 +5,7 @@ export const resumeData = {
     email: "wellparth@outlook.com",
     phone: "+91 90675 51734",
     linkedin: "https://www.linkedin.com/in/parthgorde",
-    location: "Nashik / Pune, MH, India",
+    location: "Nashik, MH, India (Open to Relocate)",
     status: "Available for Operations & Project Coordinator Roles",
     summary: "Operations and Project Coordination professional with experience in client communication, requirement gathering, stakeholder management, and digital project delivery. Background in technology and business development, with hands-on experience coordinating clients, teams, and freelance professionals from requirements through completion.",
   },

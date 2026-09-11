@@ -174,7 +174,7 @@ export default function ContactPage() {
         <div className="bg-olive-50 border border-olive-200 rounded-xl p-5 flex items-center justify-between text-xs text-ink-700 font-sans">
           <div className="flex items-center space-x-2">
             <MapPin className="w-4 h-4 text-olive-600 shrink-0" />
-            <span>Based in <strong>Nashik / Pune, Maharashtra, India</strong> (Open to Remote & On-site Roles)</span>
+            <span>Based in <strong>{resumeData.personal.location}</strong></span>
           </div>
         </div>
       </main>
