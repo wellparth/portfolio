@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio-wellparth.vercel.app'),
+  metadataBase: new URL('https://wellparth.vercel.app'),
   title: {
     default: 'Parth Gorde | Digital Project Coordinator & Operations Specialist',
     template: '%s | Parth Gorde',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://portfolio-wellparth.vercel.app',
+    url: 'https://wellparth.vercel.app',
     siteName: 'Parth Gorde Portfolio',
     title: 'Parth Gorde | Digital Project Coordinator & Operations Specialist',
     description:
@@ -75,7 +75,7 @@ export default function RootLayout({
     '@type': 'Person',
     name: 'Parth Gorde',
     jobTitle: 'Digital Project Coordinator & Operations Specialist',
-    url: 'https://portfolio-wellparth.vercel.app',
+    url: 'https://wellparth.vercel.app',
     sameAs: [
       'https://www.linkedin.com/in/parthgorde',
       'https://x.com/wellparth',
