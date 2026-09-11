@@ -30,9 +30,9 @@ export default function Navbar() {
           <Link href="/blog" className="hover:text-olive-600 transition-colors">
             Blogs
           </Link>
-          <a href="#contact" className="hover:text-olive-600 transition-colors">
+          <Link href="/contact" className="hover:text-olive-600 transition-colors">
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Actions */}
@@ -45,13 +45,13 @@ export default function Navbar() {
             <Download className="w-3.5 h-3.5 text-olive-600" />
             <span>PDF Resume</span>
           </a>
-          <a
-            href={`mailto:${resumeData.personal.email}`}
+          <Link
+            href="/contact"
             className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-lg text-xs font-medium bg-olive-500 hover:bg-olive-600 text-white shadow-sm transition-colors"
           >
             <Mail className="w-3.5 h-3.5" />
-            <span>Email</span>
-          </a>
+            <span>Contact</span>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -70,7 +70,7 @@ export default function Navbar() {
           <nav className="flex flex-col space-y-2 text-sm font-medium text-ink-700">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Home</Link>
             <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Blogs</Link>
-            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Contact</a>
+            <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Contact</Link>
           </nav>
           <div className="pt-2 border-t border-beige-200 flex gap-2">
             <a
@@ -81,13 +81,14 @@ export default function Navbar() {
               <Download className="w-3.5 h-3.5 text-olive-600" />
               <span>PDF Resume</span>
             </a>
-            <a
-              href={`mailto:${resumeData.personal.email}`}
-              className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2 rounded-lg text-xs font-medium bg-olive-500 text-white"
+            <Link
+              href="/contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex-1 inline-flex items-center justify-center space-x-1.5 py-2 rounded-lg text-xs font-medium bg-olive-500 text-white text-center"
             >
               <Mail className="w-3.5 h-3.5" />
-              <span>Email</span>
-            </a>
+              <span>Contact</span>
+            </Link>
           </div>
         </div>
       )}
