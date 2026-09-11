@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { resumeData } from '@/data/resumeData';
-import { Mail, Linkedin, Phone, MapPin, ArrowUpRight } from 'lucide-react';
+import { Mail, Download, MapPin } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -40,14 +40,12 @@ export default function Hero() {
           </a>
 
           <a
-            href={resumeData.personal.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2.5 rounded-xl bg-beige-50 hover:bg-beige-200 text-ink-900 border border-beige-300 flex items-center space-x-1.5 transition-all"
+            href="/Parth_Gorde_Operations_Resume.pdf"
+            download
+            className="px-4 py-2.5 rounded-xl bg-beige-50 hover:bg-beige-200 text-ink-900 border border-beige-300 flex items-center space-x-2 transition-all"
           >
-            <Linkedin className="w-4 h-4 text-olive-600" />
-            <span>LinkedIn Profile</span>
-            <ArrowUpRight className="w-3.5 h-3.5 text-ink-500" />
+            <Download className="w-4 h-4 text-olive-600" />
+            <span>Download Resume</span>
           </a>
 
           <span className="flex items-center space-x-1 text-ink-500 ml-auto sm:ml-0">

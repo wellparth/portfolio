@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { resumeData } from '@/data/resumeData';
 import { Download, Mail, Menu, X } from 'lucide-react';
 
@@ -11,7 +12,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 bg-beige-100/90 backdrop-blur-md border-b border-beige-300/60">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Brand */}
-        <a href="#hero" className="flex items-center space-x-2 group">
+        <Link href="/" className="flex items-center space-x-2 group">
           <div className="w-8 h-8 rounded-lg bg-olive-500 text-white flex items-center justify-center font-bold text-xs shadow-sm group-hover:bg-olive-600 transition-colors">
             PG
           </div>
@@ -19,15 +20,19 @@ export default function Navbar() {
             {resumeData.personal.name}
             <span className="text-olive-500 font-medium text-xs ml-1.5">• Operations</span>
           </span>
-        </a>
+        </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-6 text-xs font-medium text-ink-700">
-          <a href="#impact" className="hover:text-olive-600 transition-colors">Impact</a>
-          <a href="#skills" className="hover:text-olive-600 transition-colors">Skills & AI</a>
-          <a href="#experience" className="hover:text-olive-600 transition-colors">Experience</a>
-          <a href="#education" className="hover:text-olive-600 transition-colors">Education</a>
-          <a href="#contact" className="hover:text-olive-600 transition-colors">Contact</a>
+        {/* Desktop Nav: Home, Blogs, Contact */}
+        <nav className="hidden md:flex items-center space-x-8 text-xs font-semibold text-ink-700">
+          <Link href="/" className="hover:text-olive-600 transition-colors">
+            Home
+          </Link>
+          <Link href="/blog" className="hover:text-olive-600 transition-colors">
+            Blogs
+          </Link>
+          <a href="#contact" className="hover:text-olive-600 transition-colors">
+            Contact
+          </a>
         </nav>
 
         {/* Actions */}
@@ -62,11 +67,9 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-beige-50 border-b border-beige-300 px-4 pt-3 pb-5 space-y-3">
-          <nav className="flex flex-col space-y-2 text-sm text-ink-700">
-            <a href="#impact" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Impact</a>
-            <a href="#skills" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Skills & AI</a>
-            <a href="#experience" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Experience</a>
-            <a href="#education" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Education</a>
+          <nav className="flex flex-col space-y-2 text-sm font-medium text-ink-700">
+            <Link href="/" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Home</Link>
+            <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Blogs</Link>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="py-1 hover:text-olive-600">Contact</a>
           </nav>
           <div className="pt-2 border-t border-beige-200 flex gap-2">
